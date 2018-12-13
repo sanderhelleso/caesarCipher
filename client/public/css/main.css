@@ -91,6 +91,15 @@ body {
     margin: 3rem auto;
 }
 
+#shift-amount {
+    min-height: 3rem;
+    border-radius: 40px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.25rem;
+    letter-spacing: 2px !important;
+}
+
 #button-cont button {
     min-width: 100%;
     min-height: 3rem;
