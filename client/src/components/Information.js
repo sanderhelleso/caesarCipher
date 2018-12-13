@@ -11,7 +11,10 @@ export default class Information extends Component {
         return (
             <section id="information">
                 <div className="info-cont">
-                    <h1>How Does It Work?</h1>
+                    <div className="heading">
+                        <h1>How Does It Work?</h1>
+                        <div className="border"></div>
+                    </div>
                     <div className="columns">
                         <div className="column">
                             <div id="julius">
@@ -27,12 +30,15 @@ export default class Information extends Component {
                     </div>
                 </div>
                 <div className="info-cont">
-                    <h1>The Algorithm</h1>
+                    <div className="heading">
+                        <h1>The Algorithm</h1>
+                        <div className="border"></div>
+                    </div>
                     <div className="columns">
                         <div className="column">
                             <p>{STATIC_TXT.algorithm}</p>
                             <br />
-                            <aside className="menu">
+                            <aside className="menu order">
                                 <p className="menu-label">
                                     Input:
                                 </p>
@@ -55,6 +61,42 @@ export default class Information extends Component {
                                 <img src="img/shift.png" alt="Example of Ceasar Shift" />
                                 <span><b>Figure 1.2</b> Example of Ceaser Shift</span>
                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="info-cont">
+                    <div className="heading">
+                        <h1>Terminologies and Bibliography</h1>
+                        <div className="border"></div>
+                    </div>
+                    <div id="term" className="columns">
+                        <div className="column">
+                            <aside className="menu term-bibl">
+                                <p className="menu-label">
+                                    Terminologies:
+                                </p>
+                                <ul className="menu-list terms">
+                                    <li><b>Ceasar</b> - Julius Ceaser, Old Emperer of ancient Rome</li>
+                                    <li><b>Shift</b> - Shifting of letters position</li>
+                                    <li><b>Algorithm</b> - A series of steps to perform a task</li>
+                                    <li><b>Shiper</b> - Algorithm for performing encryption or decryption</li>
+                                    <li><b>Cryptography</b> - Study of the techniques of secret writing</li>
+                                </ul>
+                            </aside>
+                        </div>
+                        <div className="column">
+                            <aside className="menu term-bibl">
+                                <p className="menu-label">
+                                    Bibliography:
+                                </p>
+                                <ul className="menu-list">
+                                    <li><a href="https://www.geeksforgeeks.org/caesar-cipher/" target="_blank"><b>Geek For Geeks</b> - https://www.geeksforgeeks.org/caesar-cipher/</a></li>
+                                    <li><a href="https://www.cs.cmu.edu/~pattis/15-1XX/common/handouts/ascii.html" target="_blank"><b>ASCII Tabel</b> - https://www.cs.cmu.edu/~pattis/15-1XX/common/handouts/ascii.html</a></li>
+                                    <li><a href="https://en.wikipedia.org/wiki/Caesar_cipher" target="_blank"><b>Wikipedia</b> - https://en.wikipedia.org/wiki/Caesar_cipher</a></li>
+                                    <li><a href="https://www.biography.com/people/julius-caesar-9192504" target="_blank"><b>Figure 1.1</b> - https://www.biography.com/people/julius-caesar-9192504</a></li>
+                                    <li><a href="https://www.geeksforgeeks.org/caesar-cipher/" target="_blank"><b>Figure 1.2</b> - https://www.geeksforgeeks.org/caesar-cipher/</a></li>
+                                </ul>
+                            </aside>
                         </div>
                     </div>
                 </div>

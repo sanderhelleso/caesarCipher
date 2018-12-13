@@ -84,7 +84,6 @@ export default class App extends Component {
     render() {
         return (
             <main>
-                <h5>{STATIC_TXT.developedBy}</h5>
                 <section id="app" className="columns">
                     <div id="hero" className="column">
                         <h1 className="long-shadow">Casesar<br></br><span>Cipher</span></h1>
@@ -102,13 +101,17 @@ export default class App extends Component {
                                     <button id="encrypt" className="button" onClick={(e) => this.ceaserCipher(false)}>Encrypt</button>
                                 </div>
                                 <div className="column">
-                                    <input id="shift-amount" className="input" type="number" placeholder="Shift Amount" min={0} max={26} value={this.state.shiftAmount} onChange={(e) => this.updateShift(e)} />
+                                    <input id="shift-amount" className="input" type="number" placeholder="Shift" min={0} max={26} value={this.state.shiftAmount} onChange={(e) => this.updateShift(e)} />
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
                 <Information />
+                <div id="footer">
+                    <h5>{STATIC_TXT.developedBy}</h5>
+                    <a href="https://github.com/sanderhelleso/caesarCipher/blob/master/client/src/components/App.js" target="_blank">Souce Code</a>
+                </div>
             </main>
         )
     }
