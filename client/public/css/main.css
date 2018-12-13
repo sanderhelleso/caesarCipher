@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Monoton');
+
+
+body {
+    background-color: #f5f5f5;
+}
+
+#hero-bg {
+    background: linear-gradient(
+    rgba(0, 0, 0, 0.9), 
+    rgba(196, 68, 255, 0.5)),
+    url("../img/hero.jpg");
+    background-size: cover;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center; 
+    min-height: 101.5vh;
+    position: relative;
+    -webkit-clip-path: polygon(50% 0%, 83% 0, 90% 53%, 50% 84%, 0% 75%, 0 0);
+    clip-path: polygon(50% 0%, 83% 0, 90% 53%, 50% 84%, 0% 75%, 0 0);
+    -webkit-box-shadow: 0 24px 38px 3px rgba(0,0,0,0.14), 0 9px 46px 8px rgba(0,0,0,0.12), 0 11px 15px -7px rgba(0,0,0,0.2);
+    box-shadow: 0 24px 38px 3px rgba(0,0,0,0.14), 0 9px 46px 8px rgba(0,0,0,0.12), 0 11px 15px -7px rgba(0,0,0,0.2);
+}
+
+#hero {
+    position: relative;
+}
+
+#hero h1 {
+    position: absolute;
+    top: 27.5%;
+    left: 115%;
+    transform: translate(-115%);
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 1;
+    background: linear-gradient(to left, #B06AB3, #4568DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Monoton', cursive;
+    z-index: 1337;
+}
+
+#hero h1 span {
+    display: block;
+    margin-left: 9rem;
+}
+
+.long-shadow{
+    color:#fff;
+    text-shadow:1px 1px rgba(0,0,0,0.01),
+    2px 2px rgba(0,0,0,0.03),
+    3px 3px rgba(0,0,0,0.025),
+    4px 4px rgba(0,0,0,0.02),
+    5px 5px rgba(0,0,0,0.015),
+    6px 6px rgba(0,0,0,0.01),
+    7px 6px rgba(0,0,0,0.01),
+    8px 8px rgba(0,0,0,0.01),
+    9px 8px rgba(0,0,0,0.01),
+    10px 10px rgba(0,0,0,0.01),
+    11px 11px rgba(0,0,0,0.01),
+    12px 12px rgba(0,0,0,0.01),
+    13px 13px rgba(0,0,0,0.01),
+    14px 14px rgba(0,0,0,0.01),
+    15px 15px rgba(0,0,0,0.01),
+    16px 16px rgba(0,0,0,0.01),
+    17px 17px rgba(0,0,0,0.01),
+    18px 18px rgba(0,0,0,0.01),
+    19px 19px rgba(0,0,0,0.01),
+    20px 20px rgba(0,0,0,0.01),
+    21px 21px rgba(0,0,0,0.01),
+    22px 22px rgba(0,0,0,0.01),
+    23px 23px rgba(0,0,0,0.01);
+}
