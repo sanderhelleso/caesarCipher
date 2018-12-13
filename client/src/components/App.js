@@ -3,7 +3,7 @@ import Information from './Information';
 
 const STATIC_TXT = {
     developedBy: 'Developed by Sander Hellesoe for Math 170 Discrete Mathematics Project 3',
-    intro: 'The Caesar cipher is one of the earliest known and simplest ciphers. It is a type of substitution cipher in which each letter in the plaintext is "shifted" a certain number of places down the alphabet. For example, with a shift of 1, A would be replaced by B, B would become C, and so on. The method is named after Julius Caesar, who apparently used it to communicate with his generals.'
+    intro: 'First used by Julius Caesar, the Caesar Cipher is one of the more well-known older historical encryption methods. While you certainly wouldnt want to use it in todays modern world, a long time ago it might have done the trick. Play Around with different text below. Simply enter some text and press either "Decrypt" to decrypt a encrypted message or "Encrypt" to encrypt a message. Have Fun!'
 }
 
 export default class App extends Component {
@@ -85,7 +85,7 @@ export default class App extends Component {
         return (
             <main>
                 <h5>{STATIC_TXT.developedBy}</h5>
-                <section className="columns">
+                <section id="app" className="columns">
                     <div id="hero" className="column">
                         <h1 className="long-shadow">Casesar<br></br><span>Cipher</span></h1>
                         <div id="hero-bg"></div>
