@@ -1,6 +1,23 @@
 import React, { Component } from 'react';
 
 export default class App extends Component {
+    constructor() {
+        super();
+        this.state = {
+            originalText: null,
+            modifiedText: null
+        }
+    }
+
+    decrypt() {
+        console.log(123);
+    }
+
+    encrypt() {
+        console.log(321);
+    }
+
+
     render() {
         return (
             <main>
@@ -16,10 +33,10 @@ export default class App extends Component {
                             <textarea className="textarea has-fixed-size" placeholder="Enter some text to decrypt / encrypt" rows="10"></textarea>
                             <div id="button-cont" className="columns">
                                 <div className="column">
-                                    <button id="decrypt" class="button">Decrypt</button>
+                                    <button id="decrypt" className="button" onClick={this.decrypt}>Decrypt</button>
                                 </div>
                                 <div className="column">
-                                    <button id="encrypt" class="button">Encrypt</button>
+                                    <button id="encrypt" className="button" onClick={this.encrypt}>Encrypt</button>
                                 </div>
                             </div>
                         </div>
