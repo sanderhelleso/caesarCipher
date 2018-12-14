@@ -27,14 +27,8 @@ export default class App extends Component {
 
     updateShift(e) {
         this.setState({
-            shiftAmount: (e.target.value > -1 && e.target.value < 27) ? e.target.value : 11
+            shiftAmount: (e.target.value > -1 && e.target.value < 26) ? parseInt(e.target.value) : 11
         })
-    }
-
-    rot13(shifts) {
-        document.querySelector('.textarea').value = this.state.originalText.replace(/[a-zA-Z]/gi, (s) => {
-            return String.fromCharCode(s.charCodeAt(0) + shifts)
-        });
     }
 
     // Decrypts and Encrypts the given string with the given key using the Caesar shift cipher.
@@ -73,6 +67,12 @@ export default class App extends Component {
             }
         }
 
+        // update state
+        this.setState({
+            originalText: result
+        })
+
+        // set result
         document.querySelector('.textarea').value = result;
     }
 
@@ -86,7 +86,7 @@ export default class App extends Component {
             <main>
                 <section id="app" className="columns is-vcentered is-centered is-desktop">
                     <div id="hero" className="column">
-                        <h1 className="long-shadow">Casesar<br></br><span>Cipher</span></h1>
+                        <h1 className="long-shadow">Caesar<br></br><span>Cipher</span></h1>
                         <div id="hero-bg"></div>
                     </div>
                     <div className="column">
@@ -101,7 +101,7 @@ export default class App extends Component {
                                     <button id="encrypt" className="button" onClick={(e) => this.ceaserCipher(false)}>Encrypt</button>
                                 </div>
                                 <div className="column">
-                                    <input id="shift-amount" className="input" type="number" placeholder="Shift" min={0} max={26} value={this.state.shiftAmount} onChange={(e) => this.updateShift(e)} />
+                                    <input id="shift-amount" className="input" type="number" placeholder="Shift" min={0} max={25} value={this.state.shiftAmount} onChange={(e) => this.updateShift(e)} />
                                 </div>
                             </div>
                         </div>
