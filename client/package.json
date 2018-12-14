@@ -11,14 +11,15 @@
     "serve": "^10.1.1"
   },
   "engines": {
-    "npm": "5.6.1",
+    "npm": "5.6.0",
     "node": "8.11.3"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "npm run build"
   },
   "eslintConfig": {
     "extends": "react-app"
