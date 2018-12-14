@@ -267,9 +267,9 @@ p {
 
 @media screen AND (max-width: 600px) {
     #hero h1 {
-        left: 50%;
-        transform: translate(-50%);
-        font-size: 3rem;
+        left: 55%;
+        transform: translate(-55%);
+        font-size: 2.5rem;
     }
 
     #term {
@@ -278,6 +278,10 @@ p {
 
     .info-cont h1 {
         font-size: 1.75rem;
+    }
+
+    #information {
+        max-width: 85%;
     }
 }
 
