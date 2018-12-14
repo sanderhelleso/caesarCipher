@@ -84,7 +84,7 @@ export default class App extends Component {
     render() {
         return (
             <main>
-                <section id="app" className="columns">
+                <section id="app" className="columns is-vcentered is-centered is-desktop">
                     <div id="hero" className="column">
                         <h1 className="long-shadow">Casesar<br></br><span>Cipher</span></h1>
                         <div id="hero-bg"></div>

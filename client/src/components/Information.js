@@ -15,7 +15,7 @@ export default class Information extends Component {
                         <h1>How Does It Work?</h1>
                         <div className="border"></div>
                     </div>
-                    <div className="columns">
+                    <div className="columns is-vcentered is-centered is-desktop">
                         <div className="column">
                             <div id="julius">
                                 <img src="img/julius.jpg" alt="Julius Caesar" />
@@ -34,7 +34,7 @@ export default class Information extends Component {
                         <h1>The Algorithm</h1>
                         <div className="border"></div>
                     </div>
-                    <div className="columns">
+                    <div className="columns is-vcentered is-centered is-desktop">
                         <div className="column">
                             <p>{STATIC_TXT.algorithm}</p>
                             <br />
@@ -69,7 +69,7 @@ export default class Information extends Component {
                         <h1>Terminologies and Bibliography</h1>
                         <div className="border"></div>
                     </div>
-                    <div id="term" className="columns">
+                    <div id="term" className="columns is-vcentered is-centered is-desktop">
                         <div className="column">
                             <aside className="menu term-bibl">
                                 <p className="menu-label">

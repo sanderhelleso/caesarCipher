@@ -244,3 +244,45 @@ p {
     max-width: 80%;
     margin: 0 auto;
 }
+
+@media screen AND (max-width: 1100px) {
+    #hero h1 {
+        left: 70%;
+        transform: translate(-70%);
+    }
+
+    #main-cont {
+        max-width: 85%;
+        margin: 0 auto 10vh auto;
+    }
+
+    #shift img {
+        margin: 2rem auto;
+    }
+
+    #julius span {
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen AND (max-width: 600px) {
+    #hero h1 {
+        left: 50%;
+        transform: translate(-50%);
+        font-size: 3rem;
+    }
+
+    #term {
+        max-width: 100%;
+    }
+
+    .info-cont h1 {
+        font-size: 1.75rem;
+    }
+}
+
+@media screen AND (max-width: 370px) {
+    #hero h1 {
+        font-size: 2rem;
+    }
+}
