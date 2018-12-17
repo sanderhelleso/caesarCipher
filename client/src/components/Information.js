@@ -19,7 +19,7 @@ export default class Information extends Component {
                         <div className="column">
                             <div id="julius">
                                 <img src="img/julius.jpg" alt="Julius Caesar" />
-                                <span><b>Figure 1.1</b> Julius Ceasar</span>
+                                <span><b>Figure 1.1</b> Julius Caesar</span>
                             </div>
                         </div>
                         <div className="column">
@@ -59,7 +59,7 @@ export default class Information extends Component {
                         <div className="column">
                             <div id="shift">
                                 <img src="img/shift.png" alt="Example of Ceasar Shift" />
-                                <span><b>Figure 1.2</b> Example of Ceaser Shift</span>
+                                <span><b>Figure 1.2</b> Example of Caesar Shift</span>
                             </div>
                         </div>
                     </div>
@@ -76,7 +76,7 @@ export default class Information extends Component {
                                     Terminologies:
                                 </p>
                                 <ul className="menu-list terms">
-                                    <li><b>Ceasar</b> - Julius Ceaser, Old Emperer of ancient Rome</li>
+                                    <li><b>Caesar</b> - Julius Caesar, Old Emperer of ancient Rome</li>
                                     <li><b>Shift</b> - Shifting of letters position</li>
                                     <li><b>Algorithm</b> - A series of steps to perform a task</li>
                                     <li><b>Shiper</b> - Algorithm for performing encryption or decryption</li>
